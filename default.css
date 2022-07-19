@@ -6,6 +6,8 @@
     --mainText:black;
     --secondaryText:#4b5156;
 
+    --themeDotBorder:#24292e;
+
 
 }
 
@@ -129,17 +131,79 @@ h6 { font-size: 16px;}
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    margin: 7px;
+
+    margin: 5px;
 
     -webkit-box-shadow: -1px -1px 2px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px -1px 2px 0px rgba(0,0,0,0.75);
     box-shadow: -1px -1px 2px 0px rgba(0,0,0,0.75);
 }
 
+
 .left-column{
     grid-area: left-column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+#profile_pic{
+
+    display:block;
+    margin:0 auto;
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border:2px solid var(--borderColor);
+}
+
+#theme-options-wrapper{
+    display: flex;
+    justify-content: center;
+}
 
 
+.theme-dot{
+    height:32px;
+    width:32px;
+    border-radius: 50%;
+    margin:4px;
+    background-color:#4b5156;
+
+    border:2px solid var(--themeDotBorder);
+
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+
+    cursor: pointer;
+
+}
+
+.theme-dot:hover{
+    border-width: 4px;
+}
+
+#light-mode{
+    background-color: #fff;
+}
+
+#blue-mode{
+    background-color: #192734;
+}
+
+#green-mode{
+    background-color: #647951;
+}
+
+#purple-mode{
+    background-color: #7E4C74;
+}
+
+#settings-note{
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
 }
 
 .right-column{
