@@ -8,6 +8,8 @@
         <link rel="stylesheet" type="text/css" href="default.css">
         <link rel="stylesheet" type="text/css" href="text.scss">
 
+        <link id="theme-style" rel="stylesheet" type="text/css" href="">
+
         <!--Fonts-->
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,10 +50,10 @@
                     <h5 style="text-align: center; line-height: 0%;">Personalize Themes</h5>
 
                     <div id="theme-options-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="blue-mode" class="theme-dot"></div>
-                        <div id="green-mode" class="theme-dot"></div>
-                        <div id="purple-mode" class="theme-dot"></div>
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                     </div>
 
                     <p id="settings-note">*Your fav theme will be saved for <br> your next visit :D</p>
@@ -154,6 +156,7 @@
                     <div class="post-preview">
                         <h6 class="post-title">Front End Development</h6>
                         <p class="post-intro"> built fully functional responsive website for our college's CESA.</p>
+                        <br>
                         <li><a target="_blank" href="https://www.cesavjti.com/">Website</a></li>
                     </div>
                 </div>
@@ -162,7 +165,8 @@
                     <img class="thumbnail" src="images/ai-ovrp.PNG">
                     <div class="post-preview">
                         <h6 class="post-title">Artificial Intelligence</h6>
-                        <p class="post-intro"> solved OVRP using Genetic Algorithm by manipulating direction of search. </p>
+                        <p class="post-intro"> solved OVRP using Genetic Algorithm by manipulating direction of search.</p>
+                        <br>
                         <li><a target="_blank" href="https://github.com/omkarr2102/AI-mini-Project">GitHub</a></li>
                     </div>
                 </div>
@@ -171,7 +175,7 @@
                     <img class="thumbnail" src="images/download-dv.png">
                     <div class="post-preview">
                         <h6 class="post-title">Data Visualization - datathon </h6>
-                        <p class="post-intro"> Visualized raw company hiring data using python to secure position in Top5 at somaiya's datathon22 </p>
+                        <p class="post-intro"> Visualized raw data using python to secure position in Top5 at somaiya's datathon22 </p>
                         <li><a target="_blank" href="https://github.com/omkarr2102/Datathon-22">Github</a></li>
                     </div>
                 </div>
@@ -206,6 +210,7 @@
     </footer>
 <!-- END Footer Section -->
 <script src="text.js"></script>
+<script src="theme.js"></script>
 
 </body>
 </html>

@@ -363,7 +363,7 @@ p.post-intro {
 }
 
 .footer{
-    background-color: #fff;
+    background-color: var(--secondaryColor);
     padding:10px;
 }
 
